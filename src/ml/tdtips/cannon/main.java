@@ -14,6 +14,7 @@ public class main {
 	public static void main(String[] args) {
 		Scanner sc;
 		// TODO Auto-generated method stub
+		System.out.println("\n");
 		System.out.println("Hi! I'm Tyler!");
 		System.out.println("I like to program.");
 		sc=new Scanner(System.in);sc.nextLine();
