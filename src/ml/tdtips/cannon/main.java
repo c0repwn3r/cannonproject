@@ -89,6 +89,7 @@ public class main {
         System.out.println("My favorite thing about technology is the fact that after a few minutes of work, you can do nearly anything.");
         sc.nextLine();
         System.out.println("Even order pizza.");
+        sc.nextLine();
         try {
 			Pizza.show();
 		} catch (IOException e) {
