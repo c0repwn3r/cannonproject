@@ -1,23 +1,27 @@
 package ml.tdtips.cannon;
 
 import java.io.IOException;
-import ml.tdtips.cannon.Mom;
-import ml.tdtips.cannon.Dad;
-import ml.tdtips.cannon.Redbelt;
+import ml.tdtips.cannon.*;
 import java.util.Scanner;
-import ml.tdtips.cannon.Elyse;
-import ml.tdtips.cannon.Cat;
 
 public class main {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		Scanner sc;
+		Scanner sc = new Scanner(System.in);
 		// TODO Auto-generated method stub
 		System.out.println("\n");
 		System.out.println("Hi! I'm Tyler!");
+		sc.nextLine();
+		try {
+			Me.show();
+		} catch (IOException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		}
+		sc.nextLine();
 		System.out.println("I like to program.");
-		sc=new Scanner(System.in);sc.nextLine();
+		sc.nextLine();
         System.out.println("I love videogames, and building stuff.");
         System.out.println("I love to play minecraft, and for anyone that wants to know, NO I did not come to minecraft just recently. I bought the game in 2016. PC Edition.");
         sc.nextLine();
@@ -31,7 +35,7 @@ public class main {
 			e2.printStackTrace();
 		}
         sc.nextLine();
-        System.out.println("Back to the programming thing, I have made a lot of useful programs, (like the one I wrote to make this video)...");
+        System.out.println("Back to the programming thing, I have made a lot of useful programs, (like the one I wrote in Java 8 to make this video)...");
         sc.nextLine();
         System.out.println("...aaand a LOT of useless ones, but that is how I learn :).");
         System.out.println("One of those will automatically order you pizza. And have it delivered.");
@@ -84,9 +88,13 @@ public class main {
         System.out.println("Someday I hope to become an airline pilot or a programmer, something with technology.");
         System.out.println("My favorite thing about technology is the fact that after a few minutes of work, you can do nearly anything.");
         sc.nextLine();
-        System.out.println("I have made a lot of programs that do many things.");
-        sc.nextLine();
         System.out.println("Even order pizza.");
+        try {
+			Pizza.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
